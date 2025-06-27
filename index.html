@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <div class="header__inner">
+        <p class="header__logo">LoremIpsum.<span class="header__logo-blue">Net</span></p>
+        <nav class="header__menu">
+            <ul class="header__menu-list">
+                <li class="header__menu-item">
+                    <a class="header__menu-link" href="#">Бизнес</a>
+                </li>
+                <li class="header__menu-item">
+                    <a class="header__menu-link" href="#">О нас</a>
+                </li>
+                <li class="header__menu-item">
+                    <a class="header__menu-link" href="#">Цены</a>
+                </li>
+                <li class="header__menu-item">
+                    <a class="header__menu-link" href="#">Оформить заказ</a>
+                </li>
+
+            </ul>
+        </nav>
+        <div class="header__burger">
+            <span></span>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <div class="main__preview preview">
+        <div class="preview__inner">
+            <p class="preview__title">Lorem ipsum <span class="preview__title-black">dolor sit ametconsectetur</span> adipiscing</p>
+            <div class="preview__info">
+                <p class="preview__subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+                <ul class="preview__list">
+                    <li class="preview__item"> - Totam rem aperiam eaque ipsa</li>
+                    <li class="preview__item"> - Sit voluptatem accusantium doloremque laudantium</li>
+                    <li class="preview__item"> - Sed ut perspiciatis, unde omnis iste natus error</li>
+                </ul>
+            </div>
+            <div class="preview__buttons">
+                <button class="preview__button button">заказать</button>
+                <button class="preview__button button button-white">подробнее</button>
+            </div>
+        </div>
+    </div>
+    <div class="main_order order">
+        <div class="order__inner">
+            <p class="order__title">Оформление  <span class="order__title-blue">Заказа</span></p>
+            <p class="order__info">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+            <div class="order__icons">
+                <div class="order__icon icon">
+                    <div class="icon__circle"><img class="icon__image" alt="search" src="./images/search.svg"/></div>
+                    <p class="icon__text">Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="order__dots"><div></div><div></div><div></div><div></div><div></div></div>
+                <div class="order__icon icon">
+                    <div class="icon__circle"><img class="icon__image" alt="search" src="./images/percent.svg"/></div>
+                    <p class="icon__text">Сonsecteturadipiscing elit</p>
+                </div>
+                <div class="order__dots"><div></div><div></div><div></div><div></div><div></div></div>
+                <div class="order__icon icon">
+                <div class="icon__circle"><img class="icon__image" alt="search" src="./images/file.svg"/></div>
+                <p class="icon__text">Sed do eiusmod tempor</p>
+            </div>
+                <div class="order__dots"><div></div><div></div><div></div><div></div><div></div></div>
+                <div class="order__icon icon">
+                    <div class="icon__circle"><img class="icon__image" alt="search" src="./images/message.svg"/></div>
+                    <p class="icon__text">Esse cillum dolore eu fugiat</p>
+                </div>
+                <div class="order__dots"><div></div><div></div><div></div><div></div><div></div></div>
+                <div class="order__icon icon">
+                    <div class="icon__circle"><img class="icon__image" alt="search" src="./images/money.svg"/></div>
+                    <p class="icon__text">Excepteur sint occaecat cupidatat non proident</p>
+                </div>
+            </div>
+            <form class="order__form form">
+                <div class="form__inner">
+                    <div class="form__select-wrapper">
+                        <div class="form__select form__input" data-placeholder="Выберите тип системы">
+                            <div class="form__select-selected">Выберите тип системы</div>
+                            <div class="form__select-options">
+                                <div class="form__select-option">Sed ut perspiciatis</div>
+                                <div class="form__select-option">Nemo enim ipsam</div>
+                                <div class="form__select-option">Et harum quidem</div>
+                                <div class="form__select-option">Temporibus autem</div>
+                                <div class="form__select-option">Itaque earum rerum</div>
+                            </div>
+                        </div>
+                        <input type="hidden" name="order" class="form__select-hidden">
+                    </div>
+                    <label>
+                        <input type="email" class="form__input" name="email" placeholder="Ваш e-mail">
+                    </label>
+                    <label>
+                        <input type="text" class="form__input" name="name" placeholder="Ваше имя">
+                    </label>
+                    <div class="form__range-inner">
+                        <label class="form__range-text">Sed ut perspiciatis, unde omnis iste natus</label>
+                        <span id="value" class="form__range-value">75%</span>
+                        <input type="range" id="range" name="value" class="form__range" max="100" step="1" value="75">
+                    </div>
+                    <div class="form__file">
+                        <input type="file" id="upload" name="file" class="form__file-input" hidden>
+                        <label for="upload" class="form__file-button">
+                            <span class="form__file-icon">
+                                <img src="images/file_btn.svg" alt="file_button"/>
+                            </span>
+                            <span class="form__file-text">Прикрепить файл</span>
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="form__button button">Отправить</button>
+            </form>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="footer__inner">
+        <p class="footer__copyright">© 2018 «LoremIpsum.net» Все права защищены.</p>
+        <span class="footer__divider"></span>
+        <div class="footer__router">
+            <img alt="Qiwi" src="images/qiwi.svg"/>
+            <a class="footer__link" href="https://online.contact-sys.com/transfer/where">Qiwi wallet</a>
+        </div>
+        <div class="footer__router">
+            <img alt="Yandex money" src="images/yandex_money.svg"/>
+            <a class="footer__link" href="https://yoomoney.ru/transfer?from=layout-portal-menu">Yandex Money</a>
+        </div>
+        <div class="footer__router">
+            <img alt="Web money" src="images/web_money.svg"/>
+            <a class="footer__link" href="https://www.webmoney.ru/">Web Money</a>
+        </div>
+        <span class="footer__divider"></span>
+        <div class="footer__router">
+            <img alt="mail" src="images/mail.svg"/>
+            <a class="footer__link" href="mailto:info@ipsum228.com">info@ipsum228.com</a>
+        </div>
+        <div class="footer__router">
+            <img alt="Vk" src="images/vk.svg"/>
+            <a class="footer__link" href="https://vk.com">Мы вконтакте</a>
+        </div>
+    </div>
+</footer>
+<script src="./script/index.js"></script>
+</body>
+</html>
